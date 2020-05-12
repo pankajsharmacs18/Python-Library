@@ -1,0 +1,7 @@
+import pandas as pd
+lst=[]
+for i in range(int(input("enter range "))):
+    lst.append(input())
+print("list is ",lst)
+lstSeries=pd.Series(lst)
+print("list series is  ",lstSeries)
