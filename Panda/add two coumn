@@ -1,0 +1,19 @@
+import pandas as pd
+dict={}
+lst=[]
+for i in range(int(input("enter range  :"))):
+    lst=[]
+    key=input("enter key name : ")
+    for i in range(int(input("enter row item size"))):
+        lst.append(input())
+    dict[key]=lst
+    # -  - - - - - - - - - -
+print("dictionary is ",dict)
+df=pd.DataFrame(dict)
+print("dataframe is : \n",df)
+#-----------------------
+col1=input("enter coloumn : ")
+col2=input("Enter coloumn 2")
+# - - - - - - - - - -  - - - - -- - 
+df[col]=df[col1]+df[col2]
+print("new dataframe is \n :",df)
