@@ -1,0 +1,17 @@
+import pandas as pd
+lst=[]
+lst1=[]
+for i in range(int(input("enter range of list : "))):
+    lst.append(input())
+    
+print("list is : ",lst)
+srs=pd.Series(lst)
+print("series 1st is  :\n " ,srs)
+
+for i in range(int(input("ener raneg of2nd list  "))):
+    lst1.append(input())
+print("list 2nd is :\n ",lst1)
+srs1=pd.Series(lst1)
+print("series 2nd is  : \n",srs1)
+ds=srs+srs1
+print("add of two series is  \n ",ds)
