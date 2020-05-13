@@ -1,0 +1,15 @@
+import pandas as pd
+dict={}
+lst=[]
+for i in range(int(input("enter range  :"))):
+    lst=[]
+    key=input("enter key name : ")
+    for i in range(int(input("enter row item size"))):
+        lst.append(input())
+    dict[key]=lst
+    # -  - - - - - - - - - -
+print("dictionary is ",dict)
+df=pd.DataFrame(dict)
+print("dataframe is : \n",df)
+row=int(input("enter index of row to be printed : "))
+print(df.iloc[row])
