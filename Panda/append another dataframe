@@ -1,0 +1,26 @@
+import pandas as pd
+dict={}
+lst=[]
+for i in range(int(input("enter range  :"))):
+    lst=[]
+    key=input("enter key name : ")
+    for i in range(int(input("enter row item size"))):
+        lst.append(input())
+    dict[key]=lst
+    # -  - - - - - - - - - -
+print("dictionary is ",dict)
+df=pd.DataFrame(dict)
+print("dataframe is : \n",df)
+#------- - - - - - - -  - - - -  - -- -  - - - -
+dict={}
+lst=[]
+for i in range(int(input("enter voloumn of 2nd dataframe  : "))):
+    lst=[]
+    key=input("Enter column name  : ")
+    for i in range(int(input("Enter no of row :"))):
+        lst.append(input())
+        dict[key]=lst
+df1=pd.DataFrame(dict)
+print("2nd dataframe is  :\n ",df1)
+df.append(df1,ignore_index=true)
+print(df)
