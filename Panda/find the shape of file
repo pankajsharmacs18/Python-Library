@@ -1,0 +1,6 @@
+import pandas as pd
+data=pd.read_csv("data.csv")
+print("entire data size",data.shape)
+x=data.shape
+print("Row is ",x[0])
+print("Coloumn is ",x[1])
