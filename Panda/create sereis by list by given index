@@ -1,0 +1,7 @@
+import pandas as pd
+list=[]
+for i in range(int(input("Entter range of list    : "))):
+    list.append(input("Ennter value "))
+print(list)
+srs=pd.Series(list,index=[10,9,8,7,6,5,4,3,2,1])
+print(srs)
