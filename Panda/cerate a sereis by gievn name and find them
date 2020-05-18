@@ -1,0 +1,13 @@
+import pandas as pd
+list=[]
+for i in range(int(input("Entter range of list    : "))):
+    list.append(input("Ennter value "))
+print(list)
+name=input("Enter name of series   :")
+srs=pd.Series(list,name=name)
+print("series is " ,srs.name)
+name1=input("enter name of serie to be print : ")
+if(srs.name==name):
+    print(srs)
+else:
+    print("not available : ")
