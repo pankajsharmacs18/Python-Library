@@ -1,0 +1,10 @@
+import pandas as pd
+list=[]
+for i in range(int(input("Entter range of list    : "))):
+    list.append(input("Ennter value "))
+print(list)
+srs=pd.Series(list)
+if(srs.empty):
+    print("Sereis is empty ")
+else:
+    print("Not empty")
