@@ -1,0 +1,5 @@
+import pandas as pd
+file=pd.read_csv("data.csv")
+file.head()
+sort=input("enter name of column to be sort : ")
+file.sort_values(by=sort)
