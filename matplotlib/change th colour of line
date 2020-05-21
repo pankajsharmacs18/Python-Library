@@ -1,0 +1,16 @@
+from matplotlib import pyplot as plt
+list1=[]
+for i in range(int(input("enter range of list  : "))):
+    list1.append(int(input("enter value  :")))
+print("First list is : \n ",list1)
+list2=[]
+for i in range(int(input("enter range of 2nd list : "))):
+    list2.append(int(input("Enter value : ")))
+print("list of 2nd : \n ",list2)
+plt.title("graph between both list : ")
+plt.ylabel("list 2")
+plt.xlabel("list 1")
+col=input("enter nameof clour to beprint line")
+print("graph is with both : ")
+plt.plot(list1,list2,col)
+plt.show()
