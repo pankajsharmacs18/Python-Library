@@ -1,0 +1,8 @@
+import pandas as pd
+def display(df):
+    x,y=frame.shape
+    row=int(input("Enter no of row to be display less then ",x))
+    frame.head(row)
+file=input("enter name of file to be opned : ")
+df=pd.read_csv(faile)
+display(df)
