@@ -1,0 +1,6 @@
+import pandas as pd
+file=pd.read_csv("data.csv")
+file1=pd.read_csv("median.csv")
+frame=[file,file1]
+data=pd.concat(frame,keys=[1,2],axis=0)
+data.tail().dropna()
