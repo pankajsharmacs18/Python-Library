@@ -1,0 +1,15 @@
+import numpy as np
+import random as rn
+
+lst=[]
+lst1=[]
+for i  in range(int(input("Enter range of first list "))):
+    lst.append(rn.randrange(1,100))
+print("First list is : ",lst)
+for i in range(int(input("Enter range of secound list "))):
+    lst1.append(rn.randrange(1,100))
+print(" seocound  list is ",lst1)
+arr=np.array(lst)
+arr1=np.array(lst1)
+print("Multiplication of arrays is : ",(arr*arr1))
+
