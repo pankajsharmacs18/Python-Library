@@ -1,0 +1,14 @@
+import numpy as np
+import random as rn
+
+lst=[]
+for i in range(int(input("Enter rabge of arraays :"))):
+    lst.append(rn.randrange(1,100))
+print("Input list is ",lst)
+
+arr=np.array(lst)
+print("Arrays is : ",arr )
+
+print("Max value is ",arr.max())
+print("Min Vlaue in arrays is : ",arr.min())
+
