@@ -1,0 +1,10 @@
+import numpy as np 
+
+start=int(input("enter starting value "))
+end=int(input("Enter stop vlue of arrays "))
+space=int(input("Enter space value between them "))
+arr=np.linspace(start,end,space,endpoint=True)
+print("Arrays is ",arr)
+
+
+
