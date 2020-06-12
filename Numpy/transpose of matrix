@@ -1,0 +1,26 @@
+import numpy as np
+import random as rn
+
+row=int(input("enter row of matrix "))
+col=int(input("Enter col of matrix "))
+
+mtr=[[ 0 for i in range(col)] for i in range(row)]
+for i in range(row):
+    for j in range(col):
+        mtr[i][j]=rn.randrange(10,100)
+for i in range(row):
+    for j in range(col):
+               print(mtr[i][j],end=" ")
+    print()
+
+npmtr=np.array(mtr)
+
+print("Transpose of matrix is" , npmtr)
+
+
+
+npMtr=npmtr.T
+print(npMtr)
+
+
+
