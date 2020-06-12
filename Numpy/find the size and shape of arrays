@@ -1,0 +1,18 @@
+import numpy as np
+import random
+
+lst=[]
+lst1=[]
+for i in range(int(input("Enter range of 1st list"))):
+    lst.append(random.randrange(1,100))
+print("List 1 is ",lst)
+for i in range(int(input("Enter range of secound list : "))):
+    lst1.append(random.randrange(1,100))
+print("List 2ndis ",lst1)
+arr=np.array([lst,lst1])
+print("Array is ",arr)
+
+print("size of arrays is  :",arr.size)
+
+print(" Shape of arrays is ",arr.shape)
+
