@@ -1,0 +1,11 @@
+import numpy as np 
+
+data=input("Enter data Type of arrays ")
+start=int(input("Enter start value of arrays"))
+stop =int(input("Enter stop point value of arrays "))
+step=int(input("enter step value "))
+arr=np.arange(start,stop,step,data)
+print(arr)
+
+
+
