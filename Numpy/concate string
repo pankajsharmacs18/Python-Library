@@ -1,0 +1,10 @@
+import numpy as np
+
+
+str=input("Enter string 1 ")
+print("First strign is ",str)
+str1=input("Enter 2nd string  ")
+print("2nd String is ",str1)
+full=np.char.add(str,str1)
+print("concate string is ",full)
+
